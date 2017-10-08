@@ -69,7 +69,7 @@ input:focus {
     background-color: hsla(195, 75%, 45%, .1);;
 }
 
-.text-area {
+.search-terms-input {
     flex-grow: 1;
 }
 
@@ -95,7 +95,28 @@ input:focus {
     background-color: hsla(195, 75%, 45%, .1);
 }
 
+.article-link {
+    text-decoration: none;
+    margin-left: .5rem;;
+}
 
+.article-link:hover {
+    text-decoration: underline;
+}
+
+/*Overriding jQuery UI*/
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+    border: 1px solid #eee;
+	background: #eee;
+	font-weight: 300;
+	color: #444;
+}
 
 /* Responsive display */
 

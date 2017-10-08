@@ -1,41 +1,50 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Wikipedia Reader</title>
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div class="body-container">
-            <div class="content">
-                <h1>Wikipedia Reader</h1>
-                <form>
-                    <div class="form-flex-container"> 
-                        <input type="text" name="searchterms" class="text-area" placeholder="Looking for something?" autofocus>  
-                        <input type="submit" value="Search" class="btn">
-                    </div>
-                </form>
-                <p><a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Random article</a></p>
-                <div class="search-result">
+
+<head>
+    <title>Wikipedia Reader</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script
+        src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="body-container">
+        <div class="content">
+            <h1>Wikipedia Reader</h1>
+            <form>
+                <div class="form-flex-container">
+                    <input type="text" name="searchterms" class="search-terms-input" placeholder="Looking for something?" autofocus>
+                    <input type="submit" value="Search" class="btn">
+                </div>
+            </form>
+            <p>
+                <a href="https://en.wikipedia.org/wiki/Special:Random" rel="noopener noreferrer" target="_blank">Random article</a>
+            </p>
+            <div class="search-result-container">
+
+                <!-- Basic search result format-->
+                <!-- <div class="search-result">
                     <div class="color-bar"></div>
                     <div class="search-result-text">
                         <h3>Sample Search Result</h3>
                         <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices mattis tortor, eget fringilla orci tristique ut. Aliquam velit velit, vehicula nec ligula eu, luctus venenatis tortor. Morbi quis consectetur arcu. Praesent nisl erat, mattis fringilla elementum non, vestibulum vitae magna. Etiam eleifend felis dui, non ullamcorper tellus pharetra sed. Suspendisse et fringilla arcu. Phasellus ullamcorper porttitor mauris quis condimentum. Morbi sodales ullamcorper efficitur. Vestibulum vitae purus porta, dictum tortor.    
-                        </p> 
+                            Text
+                        </p>
                     </div>
-                </div>
-                <div class="search-result">
-                        <div class="color-bar"></div>
-                        <div class="search-result-text">
-                            <h3>Sample Search Result</h3>
-                            <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ultrices mattis tortor, eget fringilla orci tristique ut. Aliquam velit velit, vehicula nec ligula eu, luctus venenatis tortor. Morbi quis consectetur arcu. Praesent nisl erat, mattis fringilla elementum non, vestibulum vitae magna. Etiam eleifend felis dui, non ullamcorper tellus pharetra sed. Suspendisse et fringilla arcu. Phasellus ullamcorper porttitor mauris quis condimentum. Morbi sodales ullamcorper efficitur. Vestibulum vitae purus porta, dictum tortor.    
-                            </p>
-                        </div>
-                    </div>
+                </div> -->
+
             </div>
-        </div> 
-    </body>
+        </div>
+    </div>
+</body>
+
 </html>
